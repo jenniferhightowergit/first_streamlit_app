@@ -32,6 +32,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #display list with newly created variable
 streamlit.dataframe(fruits_to_show)
 
+streamlit.header("Fruityvice Fruit Advice!")
+
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
